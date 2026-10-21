@@ -15,13 +15,13 @@
 
 <body>
     <header class="main-header">
+        <!-- invisible checkbox -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
         <!--Top rectangle-->
         <div class="header-top">
-
-            <!--left column-->
             <div class="left-column">
-                <div class="hamburger">☰</div>
+                <label for="menu-toggle" class="hamburger">☰</label>
                 <div class="logo">
                     <img src="images/logo.png" width="125" alt="RainyDays Logo">
                 </div>
@@ -31,14 +31,16 @@
             <div class="right-column">               
                 <span>🔍</span>
                 <span>👤 My site</span>
-                <span>🛒</span>              
+                <span class="desktop-cart-icon">🛒</span>              
             </div>
         </div>
 
-
         <!--Bottom rectangle-->
         <nav class="navbar">
+            <label for="menu-toggle" class="close-menu">✕</label>
+
             <ul>
+                <h3>CATEGORIES:</h3>
                 <li><a href="/men">Men</a></li>
                 <li><a href="/women">Women</a></li>
                 <li><a href="/collections">Collections</a></li>
@@ -46,6 +48,7 @@
                 <li><a href="/info">Info</a></li>
             </ul>
         </nav>
+
     </header>      
     
     <main>
@@ -58,13 +61,15 @@
             </div>
 
             <div class="card-one">
-                <img src="images/homepage-jacket-1.png" alt="Scott gore-tex jacket decoration image">
-                <img src="images/homepage-jacket-2.png" alt="Forest fleece jacket decoration image">
+                <div class="jacket-container">
+                    <img src="images/homepage-jacket-1.png" alt="Scott gore-tex jacket decoration image" class="jacket-left">
+                    <img src="images/homepage-jacket-2.png" alt="Forest fleece jacket decoration image" class="jacket-right">
+                </div>
                 <a href="view-all-products.html" class="button">View All Products</a>
             </div>
 
             <div class="card-two">
-                <img src="images/homepage-jacket-3.png" alt="Sailor jacket decoration image">
+                <img src="images/homepage-jacket-3.png" alt="Sailor jacket decoration image" class="sailor-jacket">
                 <h2>FRONT PROOF</h2>
                 <p>Some text here as well</p>
             </div>
@@ -77,7 +82,7 @@
             <div class="product-grid">
 
                 <div class="product-container">
-                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">🧡</button>
+                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">♡</button>
                     <a href="product.html" class="product-card">
                         <img src="images/raincoat.jpg" alt="Yellow raincoat">
                         <h4>Raincoat</h4>
@@ -90,7 +95,7 @@
                 </div>
 
                 <div class="product-container">
-                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">🧡</button>
+                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">♡</button>
                     <a href="product.html" class="product-card">
                         <img src="images/scott-gore-tex.jpg" alt="Scott gore-tex jacket">
                         <h4>Scott GORE-TEX</h4>
@@ -103,7 +108,7 @@
                 </div>
 
                 <div class="product-container">
-                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">🧡</button>
+                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">♡</button>
                     <a href="product.html" class="product-card">
                         <img src="images/lightweight-xm.jpg" alt="Lightweight XM jacket">
                         <h4>Lightweight XM</h4>
@@ -116,7 +121,7 @@
                 </div>
                 
                 <div class="product-container">
-                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">🧡</button>
+                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">♡</button>
                     <a href="product.html" class="product-card">
                         <img src="images/forest-fleece.jpg" alt="Forest fleece">
                         <h4>Forest fleece</h4>
@@ -129,7 +134,7 @@
                 </div>
 
                 <div class="product-container">
-                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">🧡</button>
+                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">♡</button>
                     <a href="product.html" class="product-card">
                         <img src="images/sailor-jacket.jpg" alt="Sailor jacket">
                         <h4>Sailor jacket</h4>
@@ -142,7 +147,7 @@
                 </div>
 
                 <div class="product-container">
-                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">🧡</button>
+                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">♡</button>
                     <a href="product.html" class="product-card">
                         <img src="images/shelljacket-black.jpg" alt="Shelljacket black">
                         <h4>Shelljacket black</h4>
@@ -155,7 +160,7 @@
                 </div>
 
                 <div class="product-container">
-                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">🧡</button>
+                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">♡</button>
                     <a href="product.html" class="product-card">
                         <img src="images/skiing jacket.jpg" alt="Skiing jacket">
                         <h4>Skiing jacket</h4>
@@ -168,7 +173,7 @@
                 </div>
 
                 <div class="product-container">
-                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">🧡</button>
+                    <button type="button" class="wishlist-icon" aria-label="Add to wishlist">♡</button>
                     <a href="product.html" class="product-card">
                         <img src="images/scott-shell-jacket.jpg" alt="Scott shell jacket">
                         <h4>Scott shell jacket</h4>
