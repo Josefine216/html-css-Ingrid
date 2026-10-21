@@ -13,7 +13,7 @@ body {
   width: 100%;
 }
 
-.menu-toggle {
+.menu-toggle, .cart-toggle {
   display: none;
 }
 
@@ -109,8 +109,9 @@ body {
   .navbar {
     position: fixed;
     top: 0;
-    left: -300px;
-    width: 300px;
+    left: -15rem;
+    width: 15rem;
+    max-width: 85vw;
     height: 100%;
     background-color: #faf7ee; 
     padding: 60px 20px 40px 20px;
@@ -140,12 +141,6 @@ body {
     text-decoration: none;
   }
 
-  .navbar ul li.demo-link a {
-    font-style: italic;
-    font-weight: 900;   
-    color: #33482a; 
-  }
-
   .navbar h3 {
     display: block;
     font-size: 1rem;
@@ -167,14 +162,9 @@ body {
     font-weight: bold;
   }
 
-    .menu-toggle:checked ~ .navbar {
-        left: 0;
-    }
-
 }
 /* #endregion */
 
-/* #endregion */
 
 /* #region HERO SECTION */
 .hero {
@@ -182,7 +172,7 @@ body {
   url("images/background.jpg");
   min-height: 83vh;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   padding: 4rem;
   display: grid;
@@ -406,6 +396,8 @@ body {
 }
 /* #endregion */
 
+/* #endregion */
+
 /* #region PRODUCT PAGE */
 .product-page {
   background-color: #faf7ee;
@@ -536,6 +528,7 @@ body {
   justify-content: center;
 }
 
+/* #region SHOPPING CART MENU AND BUTTON */
 .add-to-cart-button {
   display: inline-block;
   padding: 0.3rem;
@@ -547,6 +540,61 @@ body {
   font-size: 1.3rem;
   max-width: 16rem;
 }
+
+.add-to-cart-button:hover {
+  background-color: #2b3d24;
+}
+
+.shopping-cart {
+  position: fixed;
+  top: 0;
+  right: -25rem; 
+  width: 25rem;
+  max-width: 85vw;
+  height: 100%;
+  background-color: #faf7ee; 
+  padding: 60px 20px 40px 20px;
+  box-sizing: border-box;
+  z-index: 5;
+  transition: right 0.3s ease-in-out;
+  box-shadow: -5px 0 25px rgba(0,0,0,0.3);
+  border-left: 2px solid #aea89a;
+}
+
+.shopping-cart h3 {
+  display: block;
+  font-size: 1.1rem;
+  color: #000;
+  border-bottom: 1px solid #aea89a;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.shopping-cart h2 {
+  font-size: 1rem;
+  margin: 10px 0 5px 0;
+}
+
+.shopping-cart p {
+font-size: 0.9rem;
+color: #555;
+}
+
+.shopping-cart .close-menu {
+  display: block;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #000000;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* #endregion */
+
 /* #endregion */
 
 .details-text {
@@ -642,5 +690,15 @@ button {
   background-color: #faf7ee;
   padding-top: 4rem;
   padding-bottom: 2rem;
+}
+/* #endregion */
+
+/* #region INTERACTIVE STATES */
+.menu-toggle:checked ~ .main-header .navbar {
+  left: 0;
+}
+
+.cart-toggle:checked ~ .shopping-cart {
+  right: 0;
 }
 /* #endregion */

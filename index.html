@@ -14,9 +14,11 @@
 
 
 <body>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <input type="checkbox" id="cart-toggle" class="cart-toggle">
+
     <header class="main-header">
-        <!-- invisible checkbox -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
         <!--Top rectangle-->
         <div class="header-top">
@@ -31,7 +33,7 @@
             <div class="right-column">               
                 <span>🔍</span>
                 <span>👤 My site</span>
-                <span class="desktop-cart-icon">🛒</span>              
+                <label for="cart-toggle" class="desktop-cart-icon">🛒</label>               
             </div>
         </div>
 
@@ -188,5 +190,14 @@
             </div>
         </section>
     </main>
+
+    <aside class="shopping-cart">
+        <label for="cart-toggle" class="close-menu">✕</label>
+        <h3>COMING SOON</h3>
+        <h2>Name of item</h2>
+        <p>Colour / Size </p>
+        <h2>Price</h2>
+    </aside>
+    
 </body>
 </html>

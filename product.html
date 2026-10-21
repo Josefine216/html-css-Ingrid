@@ -8,9 +8,11 @@
 </head>
 
 <body>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <input type="checkbox" id="cart-toggle" class="cart-toggle">
+
     <header class="main-header">
-        <!-- invisible checkbox -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
         <!--Top rectangle-->
         <div class="header-top">
@@ -19,7 +21,7 @@
                 <div class="logo">
                     <a href="index.html">
                         <img src="images/logo.png" width="125" alt="RainyDays Logo">
-                    </a>   
+                    </a>       
                 </div>
             </div>
 
@@ -27,7 +29,7 @@
             <div class="right-column">               
                 <span>🔍</span>
                 <span>👤 My site</span>
-                <span class="desktop-cart-icon">🛒</span>              
+                <label for="cart-toggle" class="desktop-cart-icon">🛒</label>            
             </div>
         </div>
 
@@ -45,10 +47,9 @@
             </ul>
         </nav>
 
-    </header>    
+    </header>  
 
     <main class="product-page">
-
         <!-- Left side of the page with the images -->
         <div class="product-gallery">
                 <div class="image-frame main-image">
@@ -58,56 +59,51 @@
                     <img src="images/sailor-jacket.jpg" alt="Sailor jacket close-up view">
                 </div>
         </div>
-
         <!-- Right side of the page with the info and choices -->
         <div class="product-info">
-                <h1 class="product-main-title">SAILOR JACKET</h1>
+            <h1 class="product-main-title">SAILOR JACKET</h1>
 
-                <div class="product-reviews">
-                    <span class="stars">★★★★★</span>
-                    <span class="review-count">(78)</span>
-                    <a href="#reviews" class="leave-review-link">Leave a review</a>
-                </div>
+            <div class="product-reviews">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">(78)</span>
+                <a href="#reviews" class="leave-review-link">Leave a review</a>
+            </div>
 
-                <p class="product-short-text">
-                    Stay warm even in the toughest weather conditions. 
-                    The jacket is insulated and has a high storm collar.
-                </p>
+            <p class="product-short-text">
+                Stay warm even in the toughest weather conditions. 
+                The jacket is insulated and has a high storm collar.
+            </p>
 
-                <div class="divider"></div>
-                <p class="product-price">1399,00 NOK</p>
-                <div class="divider"></div>
+            <div class="divider"></div>
+            <p class="product-price">1399,00 NOK</p>
+            <div class="divider"></div>
 
-                <div class="product-buttons">
-                    <!-- Color choice -->
-                    <div class="color-options">
-                        <h3>Colour:</h3>
-                        <div class="colour-group">
-                            <span class="colour-dots" id="orange-dot"></span>
-                            <span class="colour-dots" id="purple-dot"></span>
-                            <span class="colour-dots" id="dark-green-dot"></span>
-                        </div>
-                    </div>
-
-                    <!-- Size choice -->
-                    <div class="option-group">
-                        <h3>Size:</h3>
-                        <div class="size-options">
-                            <button type="button" class="size-box">XS</button>
-                            <button type="button" class="size-box">S</button>
-                            <button type="button" class="size-box">M</button>
-                            <button type="button" class="size-box">L</button>
-                            <button type="button" class="size-box">XL</button>
-                        </div>
-                    </div>
-
-                    <!-- Add to cart button -->
-                    <div class="add-to-cart-button">
-                        <a href="#" class="add-to-cart-button">🛒 Add to cart</a>
+            <div class="product-buttons">
+                <!-- Color choice -->
+                <div class="color-options">
+                    <h3>Colour:</h3>
+                    <div class="colour-group">
+                        <span class="colour-dots" id="orange-dot"></span>
+                        <span class="colour-dots" id="purple-dot"></span>
+                        <span class="colour-dots" id="dark-green-dot"></span>
                     </div>
                 </div>
+
+                <!-- Size choice -->
+                <div class="option-group">
+                    <h3>Size:</h3>
+                    <div class="size-options">
+                        <button type="button" class="size-box">XS</button>
+                        <button type="button" class="size-box">S</button>
+                        <button type="button" class="size-box">M</button>
+                        <button type="button" class="size-box">L</button>
+                        <button type="button" class="size-box">XL</button>
+                    </div>
+                </div>
+                <!-- Add to cart button -->
+                <label for="cart-toggle" class="add-to-cart-button">🛒Add to cart</label>
+            </div>
         </div>
-
         <!-- Text about the product -->
         <div class="details-text">
             <h3>Details:</h3>
@@ -120,7 +116,6 @@
         </div>
 
         <div class="materials-section">
-            
             <div class="details-divider"></div>
              <span class="arrow-icon">></span>
             <h3>Materials:</h3>
@@ -128,3 +123,12 @@
         </div>
     </main>
 
+    <aside class="shopping-cart">
+        <label for="cart-toggle" class="close-menu">✕</label>
+        <h3>COMING SOON</h3>
+        <h2>Name of item</h2>
+        <p>Colour / Size </p>
+        <h2>Price</h2>
+    </aside>
+
+</body>
