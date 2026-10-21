@@ -396,6 +396,139 @@ body {
 }
 /* #endregion */
 
+/* #region FOOTER */
+.footer-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #aca79a;
+  padding: 2rem 3.5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 250px));
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.8rem 0;
+  text-align: left;
+}
+
+.footer-wrapper h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+  color: white;
+  line-height: 2;
+}
+
+.footer-wrapper a:hover {
+  color: #d5d5d5;
+}
+
+/* #region NEWSLETTER */
+.footer-newsletter {
+  grid-column: 1 / -1; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.icon-and-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  min-width: 280px; 
+}
+
+.footer-newsletter h2, 
+.footer-newsletter p {
+  background-color: #f9f7ee;
+  padding: 0.2rem 0.4rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+.footer-newsletter input {
+  background-color: #39502f;
+  padding: 0.5rem 2rem 0.5rem 0.2rem;
+  border: 2px solid #39502f;
+  width: 16rem;
+  color: white;
+}
+
+.footer-newsletter input::placeholder {
+  color: #c5c5c5; 
+}
+
+.email-input-and-sign-me-up-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+
+.email-input-and-sign-me-up-button button {
+  background-color: #39502f;
+  padding: 0.5rem;
+  border: 2px solid #39502f;
+  width: 7rem;
+  border-radius: 0%;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+} 
+
+.email-input-and-sign-me-up-button button:hover {
+  background-color: #2b3d24;
+}
+/* #endregion */
+
+
+.webright {
+  grid-column: 1 / -1;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.webright a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem
+}
+
+.webright a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 580px) {
+  .footer-newsletter input {
+    width: 100%;
+  }
+}
+/* #endregion */
+
 /* #endregion */
 
 /* #region PRODUCT PAGE */
